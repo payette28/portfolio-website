@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Payette - Portfolio</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+        <img src="http://via.placeholder.com/200x70" alt="a picture of me">
+    </div>
+    <h1>Contact</h1>
+
+    <div>
+        <h2>CareerFoundry</h2>
+        <p> 12345 Palm Bay</p>
+        <p>Florida</p>
+        <br>
+        Tel <a href=":803 333 444">: 803 33 444</a>
+        <br>
+        Skype <a href="Skype:hello.careerfoundry"> hello.careerfoundry</a><br>
+        Email <a href="mailtooffice@careerfoundry.com">office@careerfoundry.com</a>
+        <br>
+        <a href="mailto:office@careerfoundry.com">Contact me</a>
+    </div>
+    <div>
+        <form action="" method="post" id="contact-form">
+            <label class="standard-label" for="contact-email">E-mail: </label>
+            <input type="email" id="contact-email" required>
+
+            <label class="standard-label" for="contact-telephone">Telephone: </label>
+            <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+            <label class="standard-label" for="my-input">Message: </label>
+            <textarea id ="my-input" required maxlength="240"></textarea>
+            <input type="submit" value="Send message">
+        </form>
+    </div>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
