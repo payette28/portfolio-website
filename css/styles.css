@@ -1,24 +1,24 @@
 :root {
-  --brightwhite: #ffffff;
+  --brightwhite: #fff;
   --pinkheader: #ff7b7b;
   --purplebody: #7024c7;
-  --black: #000000;
-  --gray: #D4D4D4;
-  --licolor: #EAC0BD;
-  --anchorgreen: #5EF056;
+  --black: #000;
+  --gray: #d4d4d4;
+  --licolor: #eac0bd;
+  --anchorgreen: #5ef056;
   --visitedlink: #238a1d;
   --focuscolor: #0da006;
   --activecolor: #2abd22;
-  --buttonbackcolor:#357b70;
+  --buttonbackcolor: #357b70;
   --borderbot: rgba(0, 0, 0, 0.3);
-  --buttonbackseccolor:#e0b354;
-  --buttonseccolor:#2b2b2b;
-  --gridbackground:#5b5b5b;
+  --buttonbackseccolor: #e0b354;
+  --buttonseccolor: #2b2b2b;
+  --gridbackground: #5b5b5b;
   --buttonstyleback: #645e00;
   --borderbot: rgba(23, 25, 148, 0.3);
-  --sun0fill:#edc655;
-  --sun50fill:#fcffad;
-  --sun100fill:#f76414;
+  --sun0fill: #edc655;
+  --sun50fill: #fcffad;
+  --sun100fill: #f76414;
   --font-size-body: 16px;
   --font-size-h1: 24px;
   --font-size-h2-and-li: 18px;
@@ -30,8 +30,6 @@
   --centertextallign: center;
   --leftcenterallign: left;
 }
-
-
 
 body {
   background-color: var(--purplebody);
@@ -64,7 +62,7 @@ h2 {
   font-family: 'Bebas Neue', cursive;
   font-size: var(--font-size-h2);
   line-height: var(--lineheight-h2-and-li);
-  text-align: var(--centertextallign)
+  text-align: var(--centertextallign);
 }
 
 .info {
@@ -81,7 +79,6 @@ li {
   font-size: var(--font-size-h2-and-li);
   line-height: var(--lineheight-h2-and-li);
   text-align: var(--centertextallign);
-
 }
 
 p {
@@ -106,9 +103,8 @@ a {
   line-height: 1.4;
 }
 
-
 a:visited {
-  /* visited link*/
+  /* visited link */
   color: var(--visitedlink);
 }
 
@@ -119,23 +115,18 @@ a:focus {
 }
 
 a:active {
-  /* selected link*/
+  /* selected link */
   color: var(--activecolor);
 }
 
 button {
-  /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--buttonbackcolor);
   color: var(--brightwhite);
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid var(--borderbot);
 }
 
@@ -143,7 +134,6 @@ button:hover,
 button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
@@ -164,7 +154,7 @@ button:focus {
   float: left;
   width: 250px;
   margin-right: 40px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .profile__text {
@@ -183,8 +173,9 @@ button:focus {
 
 .page-header__item_logo {
   flex: 0 1 500px;
-  float: left
+  float: left;
 }
+
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
@@ -203,7 +194,7 @@ button:focus {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-gap: 20px;
-  padding: 10px
+  padding: 10px;
 }
 
 .grid__item {
@@ -231,9 +222,7 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
-  /* styles the button */
-  background-color: var(--buttonstyleback) ;
+  background-color: var(--buttonstyleback);
   color: var(--gray);
   font-family: 'Bebas Neue', cursive;
   font-size: 18px;
@@ -241,7 +230,6 @@ button {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  /* width of the border, type, color */
   border-bottom: 2px solid var(--borderbot);
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -253,12 +241,8 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
-
-
-
 
 .page-footer {
   clear: both;
@@ -293,6 +277,7 @@ button:focus,
     font-size: 22px;
   }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -301,9 +286,11 @@ button:focus,
   0% {
     fill: var(--sun0fill);
   }
+
   50% {
     fill: var(--sun50fill);
   }
+
   100% {
     fill: var(--sun100fill);
   }
@@ -317,6 +304,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -330,9 +318,12 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
-}.cloud-back {
+}
+
+.cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
